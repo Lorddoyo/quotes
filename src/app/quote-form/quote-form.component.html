@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="row">
-    <form #quoteForm='ngForm'>
+    <form (ngSubmit)='submitGoal()' #quoteForm='ngForm'>
       <div class="form-group">
         <label for="name">Name of Author</label>
         <input type="text"  class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
