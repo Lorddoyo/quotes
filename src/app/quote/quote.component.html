@@ -3,6 +3,7 @@
 <ul>
   <div *ngFor ='let quote of quotes'>
   <li>{{quote.name}}</li>
-  <app-quote-details [quote]='quote'></app-quote-details>
+  <button (click)='toogleDetails(i)'>Hide Details</button>
+  <app-quote-details *ngIf="goal.showDescription" [quote]='quote'></app-quote-details>
   </div>
 </ul>
