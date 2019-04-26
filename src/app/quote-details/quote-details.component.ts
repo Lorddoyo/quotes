@@ -10,7 +10,7 @@ export class QuoteDetailsComponent implements OnInit {
   @Input() quote:Quote;
   @Output() isComplete.emit(complete);
 
-  quoteComplete(complete:boolean){
+  quoteDelete(complete:boolean){
     this.isComplete.emit(complete);
   }
 
