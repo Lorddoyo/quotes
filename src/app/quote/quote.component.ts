@@ -11,14 +11,15 @@ export class QuoteComponent implements OnInit {
           new Quote(1,'The greatest trick the Devil ever pulled was convincing the world he didn’t exist','By C.S.Lewis')
           new Quote(2,'Kama unapenda watoto wa shule ambia bibi yako avae school uniform','By Zenas Muli')
   ]
-  completeQuote(isComplete,index){
+  deleteQuote(isComplete,index){
     if (isComplete){
-      this.quotes.splice(index,1);
+        let toDelete=confirm(`Are you sure you want to delete ${this.quote[index].name}`)
+
+      if(toDelete){
+          this.quote.splice(index,1)
     }
   }
-  toogleDetails(index){
-    this.quotes[index].showDescription =!this.quotes[index].showDescription;
-  }
+
 
   constructor() { }
 
