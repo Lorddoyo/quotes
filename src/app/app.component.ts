@@ -2,10 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: '<h1>My Quotes</h1>'
-                <p>This is a simple website for {{quote}}</p>,
+  templateUrl: './app.component.html'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Quotes';
+  quote ='The greatest trick the Devil ever pulled was convincing the world he didn’t exist.';
 }
