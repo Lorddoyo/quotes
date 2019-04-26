@@ -7,8 +7,8 @@ import {Quote} from '../quote'
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  new Quote(1,'The greatest trick the Devil ever pulled was convincing the world he didn’t exist'),
-  new Quote(2,'Kama unapenda watoto wa shule ambia bibi yako avae school uniform'),
+  new Quote(1,'The greatest trick the Devil ever pulled was convincing the world he didn’t exist','By C.S.Lewis'),
+  new Quote(2,'Kama unapenda watoto wa shule ambia bibi yako avae school uniform','By Zenas Muli'),
 
   constructor() { }
 
