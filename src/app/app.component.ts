@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  quote ='The greatest trick the Devil ever pulled was convincing the world he didn’t exist.';
+  quote: string[];
+
+
+  constructor(){
+    this.quotes =["The greatest trick the Devil ever pulled was convincing the world he didn’t exist.","Kama unapenda watoto wa shule ambia bibi yako avae school uniform"];
+  }
 }
