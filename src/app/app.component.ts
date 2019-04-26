@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import {Quote} from './quote'
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html'
-  styleUrls: ['./app.component.css']
+  selector: 'app-quote-details',
+  templateUrl: './quote-details.component.html',
+  styleUrls: ['./quote-details.component.css']
 })
 export class AppComponent {
   quote = [
@@ -14,6 +14,6 @@ export class AppComponent {
 
 
   constructor(){
-    this.quotes =["The greatest trick the Devil ever pulled was convincing the world he didn’t exist.","Kama unapenda watoto wa shule ambia bibi yako avae school uniform"];
+    this.quote =["The greatest trick the Devil ever pulled was convincing the world he didn’t exist.","Kama unapenda watoto wa shule ambia bibi yako avae school uniform"];
   }
 }
